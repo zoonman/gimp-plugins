@@ -39,7 +39,7 @@ def download_tags():
 	tags_n = (("", "Small"), ("Middle-size", "Big size"))
 	return tags_n
 	
-def download_brushes(image,  tags,  path, size) :
+def download_brushes(image,    path, size) :
 	#tags = ",".join(size)
 	page = 1
 	rpc_url = "http://www.progimp.ru/rpc.php?p=get.brushes&filter=%s&pg=%s" %  (size , page)
@@ -79,7 +79,7 @@ def download_brushes(image,  tags,  path, size) :
 
 register(
     proc_name = ("python-fu-download-brushes"),
-    blurb = _("BRUSHES DOWNLOADER PLUGIN\n\nWritten by Philipp Tkachev.\nIf you have some questions about the plugin, send me email to zoonman@gmail.com"),
+    blurb = _("BRUSHES DOWNLOADER PLUGIN\n\n\nIf you have some questions about the plugin, write it here: \nhttp://www.zoonman.com/projects/gimp-plugins/brushes-downloader/ "),
     help = ("Download brushes."),
     author = ("Philipp Tkachev"),
     copyright = ("Philipp Tkachev"),
@@ -88,7 +88,7 @@ register(
     imagetypes=("*"),
     params=[
         (PF_IMAGE, "image", _("Image"), None),
-        (PF_OPTION, "tags", _("Tags"), 0, download_tags() ),
+        #(PF_OPTION, "tags", _("Tags"), 0, download_tags() ),
         (PF_DIRNAME, "path", _("Save Brushes to this Directory"), (gimp.directory + os.sep + 'brushes') ),
         (PF_RADIO, "size", _("size"), "", ((_('Any'),""),(_('Small'),'small'),(_('Middle'),'mid'),(_('Big'),'big'))),
        
