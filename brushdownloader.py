@@ -10,7 +10,7 @@ import os, time, urllib2, json
 
 gettext.install("gimp20-python", gimp.locale_directory, unicode = True)
 
-def echo(*args):
+def echo(args):
 	"""Print the arguments on standard output"""
 	pdb.gimp_progress_set_text(args)
 
