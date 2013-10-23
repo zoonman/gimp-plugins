@@ -1,0 +1,90 @@
+# translation of gimpcloud.po to Russian
+# Copyright (C) 2013 Philipp Tkachev
+# Philipp Tkachev
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GIMP 2.8\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gimp&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-10-22 21:10-0500\n"
+"PO-Revision-Date: 2013-10-22 21:11-0500\n"
+"Last-Translator: Philipp Tkachev <zoonman@gmail.com>\n"
+"Language-Team: русский <gnome-cyr@lists.gnome.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2); 10<=4 && (n%100<10 || n"
+"%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\Users\\zoonman\\.gimp-2.8\\plug-ins\n"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:36
+msgid "Looking up for new brushes..."
+msgstr "Ищем новые кисти..."
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:49
+msgid "Getting... "
+msgstr "Получаем..."
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:52
+msgid " already exists!"
+msgstr " уже существует!"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:70
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:72
+msgid "Downloading "
+msgstr "Скачиваем "
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:72
+msgid " complete!"
+msgstr " выполнено!"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:75
+msgid "Can't open file"
+msgstr "Невозможно открыть файл!"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:85
+msgid ""
+"BRUSHES DOWNLOADER PLUGIN\n"
+"\n"
+"\n"
+"If you have some questions about the plugin, write it here: \n"
+"http://www.zoonman.com/projects/gimp-plugins/brushes-downloader/ "
+msgstr ""
+"Плагин для скачивания кистей\n"
+"\n"
+"\n"
+"Если у вас есть вопросы, задавайте их здесь: \n"
+"http://www.zoonman.com/projects/gimp-plugins/brushes-downloader/ "
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:90
+msgid "Download brushes"
+msgstr "Скачать кисти"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:93
+msgid "Save Brushes to this _Directory"
+msgstr "Сохранять кисти в этот _Каталог"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
+msgid "Size"
+msgstr "Размеры кистей"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
+msgid "_Any"
+msgstr "_Любые"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
+msgid "_Small"
+msgstr "_Маленькие"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
+msgid "_Middle"
+msgstr "_Средние"
+
+#: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
+msgid "_Big"
+msgstr "_Большие"

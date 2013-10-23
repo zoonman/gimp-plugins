@@ -8,7 +8,7 @@
 from gimpfu import *
 import os, time, urllib2, json
 
-gettext.install("gimp20-python", gimp.locale_directory, unicode = True)
+gettext.install("gimpcloud", (gimp.directory + os.sep + 'plug-ins'+ os.sep +'locale') , unicode = True)
 
 def echo(args):
 	"""Print the arguments on standard output"""
@@ -33,7 +33,7 @@ def download_brushes( path, size) :
 	p = 0.0
 	while page <= total_pages:
 		rpc_url = "http://www.progimp.ru/rpc.php?p=get.brushes&filter=%s&pg=%s" %  (size , page)
-		gimp.progress_init("Looking up for new brushes...")
+		gimp.progress_init(_("Looking up for new brushes..."))
 		rpc_req = build_req(rpc_url)
 		pg_url = urllib2.urlopen(rpc_req)
 		if pg_url:
@@ -46,10 +46,10 @@ def download_brushes( path, size) :
 				for cbr in br_list[u'brushes']:
 					p = p + 1.0
 					pdb.gimp_progress_update(p / br_list_len )
-					echo("Getting... " + cbr[u'name'])
+					echo(_("Getting... ") + cbr[u'name'])
 					brush_file_path = path + os.sep  + cbr[u'file']
 					if os.path.isfile(brush_file_path) :
-						echo(cbr[u'name']+" already exists!")
+						echo(cbr[u'name']+_(" already exists!"))
 					else:
 						get_brush_url = "http://www.progimp.ru/downloads/brushes/%s/get/" % cbr[u'id']
 						fd = open(brush_file_path, "wb")
@@ -67,12 +67,12 @@ def download_brushes( path, size) :
 								else:
 									fd.write(chunk)
 									bytes_so_far += len(chunk)
-									echo("Downloading " + cbr[u'name']+ ", %0.2f%% done" % round(100*float(bytes_so_far)/total_size, 2))
+									echo(_("Downloading ") + cbr[u'name']+ ", %0.2f%% " % round(100*float(bytes_so_far)/total_size, 2))
 									fd.flush()
-							echo("Downloading " + cbr[u'name']+ " complete!")		
+							echo(_("Downloading ") + cbr[u'name']+ _(" complete!"))		
 							fd.close()		
 						else:
-							echo("Can't open file")
+							echo(_("Can't open file"))
 			page += 1				
 		else:
 			echo("Can't connect to the Cloud!")
@@ -90,8 +90,8 @@ register(
 	label = _("Download brushes"),
 	imagetypes=(""),
 	params=[
-		(PF_DIRNAME, "path", _("Save Brushes to this Directory"), (gimp.directory + os.sep + 'brushes') ),
-		(PF_RADIO, "size", _("Size"), "", ((_('Any'),""),(_('Small'),'small'),(_('Middle'),'mid'),(_('Big'),'big'))),
+		(PF_DIRNAME, "path", _("Save Brushes to this _Directory"), (gimp.directory + os.sep + 'brushes') ),
+		(PF_RADIO, "size", _("Size"), "", ((_('_Any'),""),(_('_Small'),'small'),(_('_Middle'),'mid'),(_('_Big'),'big'))),
 	],
 	results=[],
 	function=(download_brushes),
