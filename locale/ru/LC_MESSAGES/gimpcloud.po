@@ -88,3 +88,21 @@ msgstr "_Средние"
 #: c:\Users\zoonman\.gimp-2.8\plug-ins/brushdownloader.py:94
 msgid "_Big"
 msgstr "_Большие"
+
+msgid "Matched pixels"
+msgstr "_Совпавшие (по цвету) пиксели"
+
+msgid "Not matched"
+msgstr "Не совпавшие"
+
+msgid "Taken area"
+msgstr "Занятая площадь"
+
+msgid "sq inches"
+msgstr "Кв.дюймов"
+
+msgid "sq cm"
+msgstr "Кв.сантиметров"
+
+msgid "Pixels counter"
+msgstr "Счетчик пикселей"
