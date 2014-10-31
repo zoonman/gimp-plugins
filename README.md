@@ -7,6 +7,7 @@ GIMP plugin to download brushes from ProGimp.RU
 PixelCounter
 ============
 Calculates area, taken by specified color.
+
 ![Screenshot](https://www.zoonman.com/files/images/pixels-counter.png)
 
 Installation
