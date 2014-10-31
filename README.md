@@ -2,9 +2,16 @@ BrushDownloader
 ===============
 GIMP plugin to download brushes from ProGimp.RU
 
-![Screenshot](http://www.zoonman.com/files/images/gimpcloud-plugin.png)
+![Screenshot](https://www.zoonman.com/files/images/gimpcloud-plugin.png)
 
-Copy content to the Gimp plugins folder.
+PixelCounter
+============
+Calculates area, taken by specified color.
+![Screenshot](https://www.zoonman.com/files/images/pixels-counter.png)
+
+Installation
+============
+Copy content of [archive](https://github.com/zoonman/gimp-plugins/archive/master.zip) to the Gimp plugins folder.
 
 On MAC you should copy achive content
     
